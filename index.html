@@ -12,10 +12,216 @@
   </head>
   <body>
     <div class="app">
+      <div class="overlay"></div>
+      <!-- sidebar 1200px -->
+      <div class="sidebar__hidden">
+        <div class="sidebar__hidden-header">
+            <div class="sidebar__hidden-header--left">
+            <button class="btn sidebar__btn--tablet btn-nav">  <img src="./assets/navigationicon.svg" alt="" class="icon"></button>
+              <span>Constructor</span>
+            </div>
+              <div class="sidebar__hidden-header--rigth">
+             <button class="btn sidebar__btn--tablet close-btn"><img src="./assets/closeicon.svg" alt="" class="icon"></button>
+              </div>
+        </div>
+        <!--  -->
+        <div class="sidebar__hidden-content">
+          <div class="main__left-menu">
+            <div class="left__menu-btn">
+              <button class="btn sidebar__btn--tablet">
+                <img src="./assets/map.svg" alt="" class="icon" />
+              </button>
+              <button class="btn sidebar__btn--tablet">
+                <img src="./assets/star.svg" alt="" class="icon" />
+              </button>
+              <button class="btn sidebar__btn--tablet">
+                <img src="./assets/msg.svg" alt="" class="icon" />
+              </button>
+              <button class="btn sidebar__btn--tablet">
+                <img src="./assets/trending.svg" alt="" class="icon" />
+              </button>
+              <button class="btn sidebar__btn--tablet">
+                <img src="./assets/social.svg" alt="" class="icon" />
+              </button>
+              <button class="btn sidebar__btn--tablet">
+                <img src="./assets/location.svg" alt="" class="icon" />
+              </button>
+            </div>
+            <div class="left__menu-bottom">
+              <button class="menu-bottom-image">
+                <img src="./assets/avatar1.png" alt="" />
+                <span></span>
+              </button>
+              <button class="menu-bottom-image">
+                <img src="./assets/avatar2.png" alt="" />
+              </button>
+              <button class="menu-bottom-image">
+                <img src="./assets/avatar3.png" alt="" />
+              </button>
+              <button class="menu-bottom-image">
+                <img src="./assets/avatar4.png" alt="" />
+              </button>
+              <button class="btn">
+                  <img class="icon" src="./assets/add.svg" alt="">
+              </div>
+            </div>
+            <div class="main__sidebar main__sidebar-tablet has-scrollbar">
+              <div class="sidebar__top">
+                  <h4>MAIN MENU</h4>
+                  <div class="sidebar__top-item sidebar__top-item--tablet active">
+                      <div class="menu-left">
+                          <img src="./assets/dashboardtablet.svg" alt="" class="icon">
+                          <span>Dashboard</span>
+                      </div>
+                      <img src="./assets/expand_moretablet.svg" alt="" class="icon">
+                  </div>
+               <div class="sidebar__list-menu">
+                      <div class="sidebar__top-item--normal">
+                        <div class="menu-left">
+                            <img src="./assets/apps.png" alt="" class="icon">
+                            <span>Applications</span>
+                        </div>
+                        <img src="./assets/expand_more.svg" alt="" class="icon">
+                      </div>
+                      <div class="sidebar__top-item--normal">
+                        <div class="menu-left">
+                            <img src="./assets/client.svg" alt="" class="icon">
+                            <span>Clients</span>
+                        </div>
+                       <div class="menu-item-right">
+                        <button class="quantity-btn">2</button>
+                         <img src="./assets/expand_more.svg" alt="" class="icon"></div>
+                      </div>
+               </div>
+              </div>
+              <div class="sidebar__center">
+                <div class="sidebar__top-item--normal project-menu">
+                    <div class="menu-left">
+                        <img src="./assets/business_center.svg" alt="" class="icon">
+                        <span>Projects</span>
+                    </div>
+                   <div class="menu-item-right">
+                     <img src="./assets/keyboard_arrow_up.svg" alt="" class="icon"></div>
+                  </div>
+                  <div class="project-list">
+                    <div class="sidebar__top-item menu-project-item active">
+                        <div class="menu-left">
+                            <img src="./assets/dotactive.svg" alt="" class="icon">
+                            <span>Coca Cola Project</span>
+                        </div>
+                        <img src="./assets/keyboard_arrow_up.svg" alt="" class="icon">
+                    </div>
+                    <div class="cocacola__project-list">
+                            <div class="cocacola-item">
+                                <div class="cocacola-item--left">
+                                    <img src="./assets/color-dot-4.svg" alt="" class="icon">
+                                    <span>Link Colors</span>
+                                </div>
+                                <div class="cocacola-item--right">
+                                    <img src="./assets/keyboard_arrow_right.svg" alt="" class="icon">
+                                </div>
+                            </div>
+                            <div class="cocacola-item active">
+                                <div class="cocacola-item--left">
+                                    <img src="./assets/dotactive.svg" alt="" class="icon">
+                                    <span >Additional Content</span>
+                                </div>
+                                <div class="cocacola-item--right">
+                                    <img src="./assets/arr_right_active.svg" alt="" class="icon">
+                                </div>
+                            </div>
+                            <div class="cocacola-item">
+                                <div class="cocacola-item--left">
+                                    <img src="./assets/color-dot-4.svg" alt="" class="icon">
+                                    <span>Disimissing</span>
+                                </div>
+                                <div class="cocacola-item--right">
+                                    <img src="./assets/keyboard_arrow_right.svg" alt="" class="icon">
+                                </div>
+                            </div>
+                            <div class="cocacola-item">
+                                <div class="cocacola-item--left">
+                                    <img src="./assets/color-dot-4.svg" alt="" class="icon">
+                                    <span>Java Script Behavior</span>
+                                </div>
+                                <div class="cocacola-item--right">
+                                    <img src="./assets/keyboard_arrow_right.svg" alt="" class="icon">
+                                </div>
+                            </div>
+
+                    </div>
+                  </div>
+
+                  <div class="project-footer">
+                    <div class="cocacola-item">
+                        <div class="cocacola-item--left">
+                            <img src="./assets/color-dot-4.svg" alt="" class="icon">
+                            <span>Zoom Projects</span>
+                        </div>
+                        <div class="cocacola-item--right">
+                            <img src="./assets/keyboard_arrow_right.svg" alt="" class="icon">
+                        </div>
+                    </div>
+                    <div class="cocacola-item">
+                        <div class="cocacola-item--left">
+                            <img src="./assets/color-dot-4.svg" alt="" class="icon">
+                            <span>Task Board</span>
+                        </div>
+                        <div class="cocacola-item--right">
+                            <img src="./assets/keyboard_arrow_right.svg" alt="" class="icon">
+                        </div>
+                    </div>
+                    <div class="cocacola-item">
+                        <div class="cocacola-item--left">
+                            <img src="./assets/color-dot-4.svg" alt="" class="icon">
+                            <span>Project Diagramma</span>
+                        </div>
+                        <div class="cocacola-item--right">
+                            <img src="./assets/keyboard_arrow_right.svg" alt="" class="icon">
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="sidebar__top-item--normal">
+                <div class="menu-left">
+                    <img src="./assets/applocation.svg" alt="" class="icon">
+                    <span>Applocations</span>
+                </div>
+                <img src="./assets/expand_more.svg" alt="" class="icon">
+              </div>
+              <div class="sidebar__footer">
+                    <h5>SECOND MENU</h5>
+                    <div class="sidebar__footer-list">
+                        <div class="footer__list-item">
+                                <div class="footer__list-item--left">
+                                    <img src="./assets/compare_arrows.svg" alt="" class="icon">
+                                    <span>Intergrations</span>
+                                </div>
+                                <img src="./assets/expand_more.svg" alt="" class="icon">
+                        </div>
+                        <div class="footer__list-item">
+                            <div class="footer__list-item--left">
+                                <img src="./assets/account_circle.svg" alt="" class="icon">
+                                <span>Users</span>
+                            </div>
+                            <img src="./assets/expand_more.svg" alt="" class="icon">
+                    </div>
+                    <div class="footer__list-item">
+                        <div class="footer__list-item--left">
+                            <img src="./assets/settings.svg" alt="" class="icon">
+                            <span>Settings</span>
+                        </div>
+                        <img src="./assets/expand_more.svg" alt="" class="icon">
+                </div>
+                    </div>
+              </div>
+          </div>
+        </div>
+      </div>
       <!-- Header -->
       <header class="header">
         <div class="header__logo">
-          <div class="btn">
+          <div class="btn btn-toggle-sidebar">
             <img class="icon" src="./assets/menu.svg" alt="" />
           </div>
           <div class="header__name">Constructor</div>
@@ -449,7 +655,7 @@
                                         <p>12:45 PM</p>
                                     </div>
                                     <div class="post-image-layout">
-                                      <div class="post-content-imagelist grid-layout-2">
+                                      <div class="post-content-imagelist">
                                           <div class="post-item-image">
                                             <img src="./assets/postimg1.png" alt="">
                                           </div>
@@ -468,6 +674,63 @@
                               </div>
                             </div>
                             <!--  -->
+                          </div>
+                          <!--  -->
+                          <div class="chat__post-line">
+                              <img src="./assets/Line.png" alt="">
+                          </div>
+                          <!--  -->
+                          <div class="chat__post-msg">
+                            <div class="post-item chat__msg-item">
+                              <div class="post-item-left">
+                                <img src="./assets/chatav1.png" alt="">
+                                <div class="post-item-left--content">
+                                    <div class="post-author">
+                                        <h5>Stella Evans</h5>
+                                        <span>Web Designer</span>
+                                        <p>12:45 PM</p>
+                                    </div>
+                                    <div class="post-content">
+                                     <span class="msg-text">When you starting a company you are thinking on how to cut expenses. One of such options to cut the startup costs is a company logo design. But is it good idea to order a cheap logo or work without company logo at all?</span>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="post-item-right">
+                                <img src="./assets/favorite2.svg" alt="" class="icon">
+                                <img src="./assets/flag.svg" alt="" class="icon">
+                                <img src="./assets/threedot.svg" alt="" class="icon">
+                              </div>
+                            </div>
+                            <div class="post-item chat__msg-item">
+                              <div class="post-item-left">
+                                <img src="./assets/chatav2.png" alt="">
+                                <div class="post-item-left--content">
+                                    <div class="post-author">
+                                        <h5>Susan Lane</h5>
+                                        <span>Web Designer</span>
+                                        <p>12:45 PM</p>
+                                    </div>
+                                    <div class="post-content">
+                                     <span class="msg-text">When you starting a company you are thinking on how to cut expenses. One of such options to cut the startup costs is a company logo design.</span>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="post-item-right">
+                                <img src="./assets/favorite2.svg" alt="" class="icon">
+                                <img src="./assets/flag.svg" alt="" class="icon">
+                                <img src="./assets/threedot.svg" alt="" class="icon">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat__post-form">
+                              <div class="chat-form-left">
+                                <img src="./assets/attachment.svg" alt="" class="icon">
+                                <img src="./assets/sendimg.svg" alt="" class="icon">
+                                <span>Type Message</span>
+                              </div>
+                              <button class="chat-form-btnsend">
+                                <img  class="icon" src="./assets/send.svg" alt="">
+                              </button>
                           </div>
                         </div>
                      </div>

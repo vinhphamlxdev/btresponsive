@@ -1,4 +1,8 @@
 let sidebarMsgList = document.querySelector(".sidebar__option-msg--list");
+let showBtn = document.querySelector(".btn-toggle-sidebar");
+let sidebarHidden = document.querySelector(".sidebar__hidden");
+let closeBtn = document.querySelector(".close-btn");
+let overlayElm = document.querySelector(".overlay");
 const userArr = [
   {
     avatar: "./assets/av1.png",
@@ -66,3 +70,15 @@ function renderList(data, renderFunc) {
 }
 let userHtmlContent = renderList(userArr, renderUserItem);
 sidebarMsgList.innerHTML = userHtmlContent;
+showBtn.addEventListener("click", () => {
+  sidebarHidden.classList.add("show");
+  overlayElm.classList.add("show");
+});
+closeBtn.addEventListener("click", () => {
+  sidebarHidden.classList.remove("show");
+  overlayElm.classList.remove("show");
+});
+overlayElm.addEventListener("click", () => {
+  sidebarHidden.classList.remove("show");
+  overlayElm.classList.remove("show");
+});
