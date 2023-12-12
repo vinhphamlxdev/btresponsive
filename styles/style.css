@@ -267,7 +267,7 @@ body {
 
 .main {
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 
 .main__left-menu {
@@ -556,6 +556,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  height: 100%;
 }
 .main__content-sidebar .sidebar__search {
   display: flex;
@@ -798,7 +799,7 @@ body {
   display: flex;
   width: 100%;
   flex-direction: column;
-  row-gap: 16px;
+  row-gap: 20px;
 }
 
 .post-author {
@@ -1059,6 +1060,9 @@ body {
   .header__name {
     display: none;
   }
+  .sidebar__hidden-left-menu {
+    display: flex;
+  }
   .btn.search-btn-tablet {
     display: flex;
   }
@@ -1139,7 +1143,24 @@ body {
     display: block;
   }
 }
+@media screen and (max-width: 960px) {
+  .post-content-imagelist,
+  .post-content {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 890px) {
+  .post-content {
+    width: 100%;
+  }
+  .header__menu {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
+  .overlay {
+    display: none;
+  }
   .header__name {
     display: block;
   }
@@ -1159,11 +1180,47 @@ body {
     left: 0;
     background: #fff;
     z-index: 9999;
-    border: 1px solid;
     z-index: 200;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 0px, rgba(0, 0, 0, 0.3) 0px 1px 6px, rgba(255, 255, 255, 0.3) 0px 1px 1px inset;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header__info-user {
+    display: none;
+  }
+  .post-content {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  .post-author {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .post-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .flag-icon,
+  .btn-close,
+  .btn-notifycation,
+  .btn.search-btn-tablet,
+  .header__info-user {
+    display: none;
+  }
+}
+@media screen and (max-width: 440px) {
+  .flag-icon {
+    display: none;
+  }
+  .main-layout {
+    padding: 15px;
   }
 }
 @media screen and (max-width: 360px) {
+  .overlay.show,
   .flag-icon,
   .btn-close,
   .btn-notifycation,
@@ -1174,6 +1231,14 @@ body {
   .main-layout {
     padding: 15px;
   }
+  .post-info-avatar {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+  .post-item-icons {
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
   .main__content-chat .chat__header {
     padding: 20px 15px;
     -moz-column-gap: 20px;
@@ -1183,10 +1248,11 @@ body {
   .main__content-chat .chat__header-icon {
     -moz-column-gap: 5px;
          column-gap: 5px;
+    justify-content: flex-start;
   }
   .chat__post-list {
     padding: 20px 15px;
-    row-gap: 20px;
+    row-gap: 10px;
   }
   .post-content-imagelist,
   .post-content {
@@ -1212,5 +1278,17 @@ body {
     align-items: center;
     display: block;
     border-radius: 5px;
+  }
+  .chat__post-form {
+    padding: 15px 20px;
+  }
+  .main__content-sidebar .sidebar__search {
+    padding: 20px 15px;
+  }
+  .chat__post-list {
+    row-gap: 20px;
+  }
+  .post-chat-msg {
+    text-align: justify;
   }
 }/*# sourceMappingURL=style.css.map */
