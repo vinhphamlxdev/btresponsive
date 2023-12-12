@@ -256,12 +256,18 @@
             <span>Clayton Santos</span>
           </div>
           <div class="header__info-notify">
-            <button class="btn">
+            <button class="btn search-btn-tablet">
+              <img class="icon" src="./assets/search.svg" alt="" />
+            </button>
+            <button class="btn btn-notifycation">
+              <span class="status"></span>
               <img class="icon" src="./assets/notify.svg" alt="" />
             </button>
-            <button class="btn">
-                <span class="status"></span>
-              <img class="icon" src="./assets/notify.svg" alt="" />
+            <button class="btn btn-user">
+              <img class="icon" src="./assets/user.svg" alt="" />
+            </button>
+            <button class="btn btn-close">
+              <img class="icon" src="./assets/close.svg" alt="" />
             </button>
           </div>
         </div>
@@ -599,6 +605,7 @@
                      <div class="main__content-chat">
                         <div class="chat__header">
                             <div class="chat__header-icon">
+                              <img src="./assets/usergroup.svg" alt="" class="icon user-group-icon">
                               <img src="./assets/local_phone.svg" alt="" class="icon">
                               <img src="./assets/videocam.svg" alt="" class="icon">
                             </div>
@@ -615,14 +622,24 @@
                         <div class="post__layout">
                           <div class="chat__post-list">
                             <div class="post-item">
-                              <div class="post-item-left">
-                                <img src="./assets/postav1.png" alt="">
-                                <div class="post-item-left--content">
+                                <div class="post-user--info">
+                                 <div class="post-info-avatar">
+                                    <img src="./assets/postav1.png" alt="">
                                     <div class="post-author">
                                         <h5>Stella Evans</h5>
-                                        <span>Web Designer</span>
-                                        <p>12:45 PM</p>
+                                        <div class="post-author--job">
+                                          <span>Web Designer</span>
+                                          <p>12:45 PM</p>
+                                      </div>
                                     </div>
+                                 </div>
+                                  <div class="post-item-icons">
+                                    <img src="./assets/favorite.svg" alt="" class="icon">
+                                    <img src="./assets/flag.svg" alt="" class="icon flag-icon">
+                                    <img src="./assets/threedot.svg" alt="" class="icon">
+                                  </div>
+                                </div>
+                                <div class="post-item-content">
                                     <div class="post-content">
                                       <div class="post-content-file">
                                         <span>Human Design Guidelines.pdf</span>
@@ -637,101 +654,105 @@
                                       </div>
                                     </div>
                                 </div>
-                              </div>
-                              <div class="post-item-right">
-                                <img src="./assets/favorite.svg" alt="" class="icon">
-                                <img src="./assets/flag.svg" alt="" class="icon">
-                                <img src="./assets/threedot.svg" alt="" class="icon">
-                              </div>
+                            
                             </div>
                             <!--  -->
                             <div class="post-item">
-                              <div class="post-item-left">
-                                <img src="./assets/postav2.png" alt="">
-                                <div class="post-item-left--content">
-                                    <div class="post-author">
-                                        <h5>Edward Goodwin</h5>
+                              <div class="post-user--info">
+                                <div class="post-info-avatar">
+                                   <img src="./assets/postav2.png" alt="">
+                                   <div class="post-author">
+                                       <h5>Edward Goodwin</h5>
+                                       <div class="post-author--job">
                                         <span>Web Designer</span>
                                         <p>12:45 PM</p>
                                     </div>
-                                    <div class="post-image-layout">
-                                      <div class="post-content-imagelist">
-                                          <div class="post-item-image">
-                                            <img src="./assets/postimg1.png" alt="">
-                                          </div>
-                                          <div class="post-item-image">
-                                            <img src="./assets/postimg2.png" alt="">
-                                          </div>
-                                      </div>
-                                     
-                                    </div>
+                                   </div>
+                                </div>
+                                <div class="post-item-icons">
+                                  <img src="./assets/favorite2.svg" alt="" class="icon">
+                                  <img src="./assets/flag.svg" alt="" class="icon flag-icon">
+                                  <img src="./assets/threedot.svg" alt="" class="icon">
                                 </div>
                               </div>
-                              <div class="post-item-right">
-                                <img src="./assets/favorite2.svg" alt="" class="icon">
-                                <img src="./assets/flag.svg" alt="" class="icon">
-                                <img src="./assets/threedot.svg" alt="" class="icon">
+                              <div class="post-content-imagelist">
+                                <div class="post-item-image">
+                                  <img class="post-item-image__first" src="./assets/post1.png" alt="">
+                                  <img class="post-item-image__second" src="./assets/postimg1.png" alt="">
+                                </div>
+                                <div class="post-item-image">
+                                  <img class="post-item-image__first" src="./assets/post2.png" alt="">
+                                  <img class="post-item-image__second" src="./assets/postimg2.png" alt="">
+                                 
+                                </div>
                               </div>
-                            </div>
-                            <!--  -->
                           </div>
-                          <!--  -->
+                          <!--chat line icon  -->
                           <div class="chat__post-line">
                               <img src="./assets/Line.png" alt="">
                           </div>
                           <!--  -->
                           <div class="chat__post-msg">
                             <div class="post-item chat__msg-item">
-                              <div class="post-item-left">
-                                <img src="./assets/chatav1.png" alt="">
-                                <div class="post-item-left--content">
-                                    <div class="post-author">
-                                        <h5>Stella Evans</h5>
+                              <div class="post-user--info">
+                                <div class="post-info-avatar">
+                                   <img src="./assets/chatav1.png" alt="">
+                                   <div class="post-author">
+                                       <h5>Kyle Peters</h5>
+                                       <div class="post-author--job">
                                         <span>Web Designer</span>
                                         <p>12:45 PM</p>
                                     </div>
-                                    <div class="post-content">
-                                     <span class="msg-text">When you starting a company you are thinking on how to cut expenses. One of such options to cut the startup costs is a company logo design. But is it good idea to order a cheap logo or work without company logo at all?</span>
-                                    </div>
+                                   </div>
                                 </div>
-                              </div>
-                              <div class="post-item-right">
-                                <img src="./assets/favorite2.svg" alt="" class="icon">
-                                <img src="./assets/flag.svg" alt="" class="icon">
-                                <img src="./assets/threedot.svg" alt="" class="icon">
-                              </div>
+                                 <div class="post-item-icons">
+                                   <img src="./assets/favorite2.svg" alt="" class="icon">
+                                   <img src="./assets/flag.svg" alt="" class="icon flag-icon">
+                                   <img src="./assets/threedot.svg" alt="" class="icon">
+                                 </div>
+                               </div>
+                               <div class="post-item-content">
+                                <div class="post-content">
+                                    <span class="post-chat-msg">When you starting a company you are thinking on how to cut expenses. One of such options to cut the startup costs is a company logo design. But is it good idea to 
+                                      order a cheap logo or work without company logo at all?</span>
+                                </div>
+                            </div>
                             </div>
                             <div class="post-item chat__msg-item">
-                              <div class="post-item-left">
-                                <img src="./assets/chatav2.png" alt="">
-                                <div class="post-item-left--content">
-                                    <div class="post-author">
-                                        <h5>Susan Lane</h5>
+                              <div class="post-user--info">
+                                <div class="post-info-avatar">
+                                   <img src="./assets/chatav2.png" alt="">
+                                   <div class="post-author">
+                                       <h5>Susan Lane</h5>
+                                       <div class="post-author--job">
                                         <span>Web Designer</span>
                                         <p>12:45 PM</p>
                                     </div>
-                                    <div class="post-content">
-                                     <span class="msg-text">When you starting a company you are thinking on how to cut expenses. One of such options to cut the startup costs is a company logo design.</span>
-                                    </div>
+                                   </div>
                                 </div>
-                              </div>
-                              <div class="post-item-right">
-                                <img src="./assets/favorite2.svg" alt="" class="icon">
-                                <img src="./assets/flag.svg" alt="" class="icon">
-                                <img src="./assets/threedot.svg" alt="" class="icon">
-                              </div>
+                                 <div class="post-item-icons">
+                                   <img src="./assets/favorite2.svg" alt="" class="icon">
+                                   <img src="./assets/flag.svg" alt="" class="icon flag-icon">
+                                   <img src="./assets/threedot.svg" alt="" class="icon">
+                                 </div>
+                               </div>
+                               <div class="post-item-content">
+                                <div class="post-content">
+                                    <span class="post-chat-msg">When you starting a company you are thinking on how to cut expenses. One of such options to cut the startup costs is a company logo design.</span>
+                                </div>
+                            </div>
                             </div>
                           </div>
-                          <div class="chat__post-form">
-                              <div class="chat-form-left">
-                                <img src="./assets/attachment.svg" alt="" class="icon">
-                                <img src="./assets/sendimg.svg" alt="" class="icon">
-                                <span>Type Message</span>
-                              </div>
-                              <button class="chat-form-btnsend">
-                                <img  class="icon" src="./assets/send.svg" alt="">
-                              </button>
-                          </div>
+                        </div>
+                        <div class="chat__post-form">
+                            <div class="chat-form-left">
+                              <img src="./assets/attachment.svg" alt="" class="icon">
+                              <img src="./assets/sendimg.svg" alt="" class="icon">
+                              <input placeholder="Type Message" type="text">
+                            </div>
+                            <button class="chat-form-btnsend">
+                              <img  class="icon" src="./assets/send.svg" alt="">
+                            </button>
                         </div>
                      </div>
                 </div>
