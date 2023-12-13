@@ -1081,9 +1081,8 @@ body {
   .btn-user {
     display: flex;
   }
-  .main__left-menu,
-  .main__content-sidebar {
-    // display: none;
+  .post-content {
+    width: 460px;
   }
   .main__content {
     position: relative;
@@ -1164,6 +1163,9 @@ body {
   .chat__post-list {
     padding: 20px 15px;
     row-gap: 10px;
+  }
+  .post-content-imagelist {
+    column-gap: 10px;
   }
   .post-content-imagelist,
   .post-content {
