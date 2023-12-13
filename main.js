@@ -1,4 +1,4 @@
-let sidebarMsgList = document.querySelector(".sidebar__option-msg--list");
+let sidebarMsgList = document.querySelector(".sidebar__option-msg-list");
 let showBtn = document.querySelector(".btn-toggle-sidebar");
 let sidebarHidden = document.querySelector(".sidebar__hidden");
 let closeBtn = document.querySelector(".close-btn");
