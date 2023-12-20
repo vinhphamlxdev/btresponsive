@@ -963,6 +963,11 @@ body {
 .user-group-icon {
   display: none;
 }
+@media screen and (max-width: 1400px) {
+  .header__logo-name {
+    display: none;
+  }
+}
 @media screen and (max-width: 1200px) {
   .main__left-menu,
   .header__logo-name {
